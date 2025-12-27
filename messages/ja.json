@@ -1,0 +1,127 @@
+{
+    "Sidebar": {
+        "brand": "SwiftQueue",
+        "dashboard": "ダッシュボード",
+        "allTickets": "すべてのチケット",
+        "createTicket": "チケット作成",
+        "vectorInquiry": "ベクター検索",
+        "settings": "設定",
+        "logout": "ログアウト",
+        "user": "ユーザー",
+        "admin": "管理"
+    },
+    "Dashboard": {
+        "title": "ダッシュボード",
+        "createTicket": "チケット作成",
+        "totalTickets": "総チケット数",
+        "statusDistribution": "ステータス分布",
+        "recentTickets": "最近のチケット",
+        "notice": "通知",
+        "noticeDescription": "午後１０時にシステムメンテナンス開始",
+        "table": {
+            "id": "ID",
+            "title": "タイトル",
+            "status": "ステータス",
+            "priority": "優先度",
+            "assignedTo": "担当者",
+            "created": "作成日"
+        },
+        "loading": "チケットを読み込み中...",
+        "error": "チケットの読み込みエラー"
+    },
+    "VectorSearch": {
+        "title": "ベクター検索",
+        "description": "チケットやシステムドキュメントについて質問できます。",
+        "chatSession": "チャットセッション",
+        "placeholder": "質問を入力してください...",
+        "initialMessage": "こんにちは！ベクターRAG搭載のAIアシスタントです。本日はどのようなお手伝いをしましょうか？",
+        "errorMessage": "申し訳ありません。リクエストの処理中にエラーが発生しました。",
+        "thinking": "考え中..."
+    },
+    "TicketList": {
+        "title": "チケット一覧",
+        "description": "システム内のすべてのチケットを管理・追跡します。",
+        "searchPlaceholder": "チケットを検索...",
+        "statusFilter": "ステータス",
+        "priorityFilter": "優先度",
+        "createTicket": "チケット作成",
+        "noTickets": "チケットが見つかりませんでした。",
+        "table": {
+            "id": "ID",
+            "title": "タイトル",
+            "status": "ステータス",
+            "priority": "優先度",
+            "assignedTo": "担当者",
+            "created": "作成日",
+            "actions": "アクション"
+        }
+    },
+    "Settings": {
+        "title": "設定",
+        "description": "アカウント設定と環境設定を管理します。",
+        "profile": "プロフィール",
+        "name": "名前",
+        "email": "メールアドレス",
+        "save": "変更を保存"
+    },
+    "Login": {
+        "title": "ログイン",
+        "description": "アカウントにアクセスするには認証情報を入力してください",
+        "emailLabel": "メールアドレス",
+        "emailPlaceholder": "m@example.com",
+        "passwordLabel": "パスワード",
+        "signIn": "サインイン",
+        "signingIn": "サインイン中...",
+        "error": "メールアドレスまたはパスワードが無効です"
+    },
+    "NewTicket": {
+        "backToDashboard": "ダッシュボードに戻る",
+        "title": "新規チケット作成",
+        "topicLabel": "トピック / タイトル",
+        "topicPlaceholder": "例: プリンターが動かない",
+        "priorityLabel": "優先度",
+        "descriptionLabel": "詳細",
+        "descriptionPlaceholder": "問題を詳しく記述してください...",
+        "submit": "チケットを送信",
+        "creating": "作成中...",
+        "success": "チケットを作成しました",
+        "error": "チケットの作成に失敗しました"
+    },
+    "TicketDetail": {
+        "title": "チケット詳細",
+        "loading": "読み込み中...",
+        "fieldTitle": "タイトル",
+        "status": "ステータス",
+        "priority": "優先度",
+        "assignedTo": "担当者",
+        "description": "詳細",
+        "createdBy": "作成者: {name} ({date})",
+        "history": "対応履歴",
+        "noHistory": "履歴はまだありません。",
+        "addResponse": "返信を追加",
+        "placeholder": "返信を入力してください...",
+        "post": "コメントを投稿",
+        "posting": "投稿中...",
+        "close": "閉じる",
+        "update": "チケットを更新",
+        "success": "チケットを更新しました！",
+        "unknownUser": "不明なユーザー"
+    },
+    "Filters": {
+        "status": "ステータスでフィルター",
+        "priority": "優先度でフィルター",
+        "allStatuses": "すべてのステータス",
+        "allPriorities": "すべての優先度",
+        "clear": "フィルターをクリア",
+        "search": "検索..."
+    },
+    "Admin": {
+        "title": "管理",
+        "description": "システム設定を管理します。",
+        "noticeSettings": "ダッシュボード通知設定",
+        "enNotice": "英語の通知",
+        "jaNotice": "日本語の通知",
+        "save": "変更を保存",
+        "success": "通知を更新しました"
+    }
+}

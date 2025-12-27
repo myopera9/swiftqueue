@@ -1,0 +1,127 @@
+{
+    "Sidebar": {
+        "brand": "SwiftQueue",
+        "dashboard": "Dashboard",
+        "allTickets": "All Tickets",
+        "createTicket": "Create Ticket",
+        "vectorInquiry": "Vector Inquiry",
+        "settings": "Settings",
+        "logout": "Log Out",
+        "user": "User",
+        "admin": "Admin"
+    },
+    "Dashboard": {
+        "title": "Dashboard",
+        "createTicket": "Create Ticket",
+        "totalTickets": "Total Tickets",
+        "statusDistribution": "Status Distribution",
+        "recentTickets": "Recent Tickets",
+        "notice": "Notice",
+        "noticeDescription": "System Maintenance at 10 PM.",
+        "table": {
+            "id": "ID",
+            "title": "Title",
+            "status": "Status",
+            "priority": "Priority",
+            "assignedTo": "Assigned To",
+            "created": "Created"
+        },
+        "loading": "Loading tickets...",
+        "error": "Error loading tickets"
+    },
+    "VectorSearch": {
+        "title": "Vector Inquiry",
+        "description": "Ask questions about tickets and system documentation.",
+        "chatSession": "Chat Session",
+        "placeholder": "Type your question...",
+        "initialMessage": "Hello! I am your AI assistant powered by Vector RAG. How can I help you with the ticket system today?",
+        "errorMessage": "Sorry, I encountered an error while processing your request.",
+        "thinking": "Thinking..."
+    },
+    "TicketList": {
+        "title": "Tickets",
+        "description": "Manage and track all system tickets.",
+        "searchPlaceholder": "Search tickets...",
+        "statusFilter": "Status",
+        "priorityFilter": "Priority",
+        "createTicket": "Create Ticket",
+        "noTickets": "No tickets found.",
+        "table": {
+            "id": "ID",
+            "title": "Title",
+            "status": "Status",
+            "priority": "Priority",
+            "assignedTo": "Assignee",
+            "created": "Created",
+            "actions": "Actions"
+        }
+    },
+    "Settings": {
+        "title": "Settings",
+        "description": "Manage your account settings and preferences.",
+        "profile": "Profile",
+        "name": "Name",
+        "email": "Email",
+        "save": "Save Changes"
+    },
+    "Login": {
+        "title": "Login",
+        "description": "Enter your credentials to access your account",
+        "emailLabel": "Email",
+        "emailPlaceholder": "m@example.com",
+        "passwordLabel": "Password",
+        "signIn": "Sign In",
+        "signingIn": "Signing in...",
+        "error": "Invalid email or password"
+    },
+    "NewTicket": {
+        "backToDashboard": "Back to Dashboard",
+        "title": "Create New Ticket",
+        "topicLabel": "Topic / Title",
+        "topicPlaceholder": "e.g. Printer not working",
+        "priorityLabel": "Priority",
+        "descriptionLabel": "Description",
+        "descriptionPlaceholder": "Describe the issue in detail...",
+        "submit": "Submit Ticket",
+        "creating": "Creating...",
+        "success": "Ticket created successfully",
+        "error": "Failed to create ticket"
+    },
+    "TicketDetail": {
+        "title": "Ticket Details",
+        "loading": "Loading...",
+        "fieldTitle": "Title",
+        "status": "Status",
+        "priority": "Priority",
+        "assignedTo": "Assigned To",
+        "description": "Description",
+        "createdBy": "Created by {name} on {date}",
+        "history": "Correspondence History",
+        "noHistory": "No history yet.",
+        "addResponse": "Add Response",
+        "placeholder": "Type your response here...",
+        "post": "Post Comment",
+        "posting": "Posting...",
+        "close": "Close",
+        "update": "Update Ticket",
+        "success": "Ticket updated!",
+        "unknownUser": "Unknown User"
+    },
+    "Filters": {
+        "status": "Filter by Status",
+        "priority": "Filter by Priority",
+        "allStatuses": "All Statuses",
+        "allPriorities": "All Priorities",
+        "clear": "Clear Filters",
+        "search": "Search..."
+    },
+    "Admin": {
+        "title": "Admin",
+        "description": "Manage system settings.",
+        "noticeSettings": "Dashboard Notice Settings",
+        "enNotice": "English Notice",
+        "jaNotice": "Japanese Notice",
+        "save": "Save Changes",
+        "success": "Notice updated successfully"
+    }
+}

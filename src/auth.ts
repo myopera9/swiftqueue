@@ -1,0 +1,66 @@
+import NextAuth from "next-auth"
+import Credentials from "next-auth/providers/credentials"
+import { PrismaAdapter } from "@auth/prisma-adapter"
+import { prisma } from "@/lib/prisma"
+import bcrypt from "bcryptjs"
+import { authConfig } from "./auth.config"
+
+export const { handlers, auth, signIn, signOut } = NextAuth({
+    ...authConfig,
+    adapter: PrismaAdapter(prisma),
+    providers: [
+        Credentials({
+            name: "Credentials",
+            credentials: {
+                username: { label: "Username", type: "text" },
+                password: { label: "Password", type: "password" }
+            },
+            async authorize(credentials) {
+                if (!credentials?.username || !credentials?.password) {
+                    return null
+                }
+
+                const user = await prisma.user.findUnique({
+                    where: {
+                        username: credentials.username as string
+                    }
+                })
+
+                if (!user || !user.password) {
+                    return null
+                }
+
+                const isPasswordValid = await bcrypt.compare(
+                    credentials.password as string,
+                    user.password
+                )
+
+                if (!isPasswordValid) {
+                    return null
+                }
+
+                return user
+            }
+        })
+    ],
+    session: {
+        strategy: "jwt"
+    },
+    callbacks: {
+        ...authConfig.callbacks,
+        async jwt({ token, user }) {
+            if (user) {
+                token.role = user.role || 'USER'
+                token.sub = user.id
+            }
+            return token
+        },
+        async session({ session, token }) {
+            if (session.user && token.sub) {
+                session.user.id = token.sub
+                session.user.role = token.role // Pass role to session
+            }
+            return session
+        },
+    },
+})
